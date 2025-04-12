@@ -7,6 +7,8 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import CourseDetails from "@/components/CourseDetails";
 import EmotionalLiberationCourse from "@/components/EmotionalLiberationCourse";
+import SupportServices from "@/components/SupportServices";
+import EmotionalLiberationWorkshop from "@/components/EmotionalLiberationWorkshop";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       <Services />
       <CourseDetails />
       <EmotionalLiberationCourse />
+      <SupportServices />
+      <EmotionalLiberationWorkshop />
       <Projects />
       <Gallery />
       <Contact />

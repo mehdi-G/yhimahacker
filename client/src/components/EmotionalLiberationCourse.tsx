@@ -11,26 +11,29 @@ const EmotionalLiberationCourse = () => {
       description: [
         "التعامل الصحيح مع مشاعر العميل",
         "إدارة الجلسة بشكل محترف",
-        "اهم ثلاث مبادئ تعتمد عليهم في إدارة الجلسة لتكون ناجحة %١٠٠",
+        "أهم ثلاث مبادئ نعتمد عليهم في إدارة الجلسة لتكون ناجحة 100%",
         "مراحل إنهاء الجلسة"
       ] 
     },
     { 
       title: "المحور النظري للعلاج الشعوري", 
       description: [
-        "تعريف تقنيات الpeat",
-        "تاريخ مدرسة ال peat ومؤسسها ورحلته في اختراع التقنيات",
-        "ما هي العناصر التي تشتغل عليها تقنيات الpeat",
-        "التحرر من الأنماط السلبية المتكررة في العلاقات",
-        "كيفية التعافي من العالقات السامة"
+        "تعريف تقنيات الـpeat",
+        "تاريخ مدرسة الـpeat ومؤسسها ورحلته في اختراع التقنيات",
+        "ما هي العناصر التي تشتغل عليها تقنيات الـpeat",
+        "دمج الأقطاب والمحايدة",
+        "ما هي عناصر الذاكرة التي تخزن داخل عقلنا وكيف تشتغل عليها التقنيات",
+        "الفرق بين الشعور والفكرة و المعتقد",
+        "كيفية استخراج جذور المشكلة؟"
       ] 
     },
     { 
       title: "الأمراض السيكوسوماتية", 
       description: [
-        "مراحل تطور الامراض السيكوسوماتية من تراكم الضغوط",
-        "تحليل حالة الأمراض السيكوسوماتية من منظور علم الميتاهيلث",
-        "الخطة العلاجية التكاملية للتعامل مع الامراض السايكوسوماتيك"
+        "مراحل تطور الأمراض السيكوسوماتية من تراكم الضغوط",
+        "تحليل حالة الأمراض السيكوسوماتية من منظور علم الميتاهيلث ومتلازمة ديرك هامـر",
+        "تشخيص حالة الأمراض السيكوسوماتية من منظور علم الميتاهيلث",
+        "الخطة العلاجية التكاملية للتعامل مع الأمراض السيكوسوماتيك"
       ] 
     },
     { 
@@ -39,7 +42,8 @@ const EmotionalLiberationCourse = () => {
         "شرح الصدمات النفسية وصدمات الطفولة",
         "أسباب الصدمات النفسية واعراضها",
         "شرح مراحل الصدمة ومساراتها",
-        "التعامل مع الصدمات النفسية بتقنيات الpeat"
+        "إشارات الخطر لتطور الصدمة ودخولها في PTSD",
+        "التعامل مع الصدمات النفسية بتقنيات الـpeat"
       ] 
     },
     { 
@@ -48,7 +52,9 @@ const EmotionalLiberationCourse = () => {
         "مدخل إلى مفهوم الطفل الداخلي",
         "الجروح العاطفية للطفل الداخلي",
         "العلاقة بين الطفل الداخلي والدفاعات النفسية",
-        "العلاج الشعوري: أدوات للوصول إلى الطفل الداخلي"
+        "العلاج الشعوري: أدوات للوصول إلى الطفل الداخلي",
+        "الطفل الداخلي في العلاقات",
+        "احتضان الطفل الداخلي: خطة علاجية فعالة لشفاء الطفل الداخلي"
       ] 
     },
     { 
@@ -59,6 +65,19 @@ const EmotionalLiberationCourse = () => {
         "الإشراف والمتابعة"
       ] 
     },
+  ];
+
+  const specialTopics = [
+    "التشافي من ألم فقد العلاقات",
+    "التشافي وتخطي صدمات الفقد والوفاة",
+    "التحرر من التأثير السلبي للعلاقات المؤذية",
+    "التحرر من التعلق بالشريك بعد الانفصال",
+    "التحرر من الأنماط السلبية المتكررة في العلاقات",
+    "التحرر من التكرار القهري للعلاقات المؤذية",
+    "اكتساب صفات مفيدة داعمة للذات وداعمة للعلاقات بشكل عام",
+    "كيفية التعافي من العلاقات السامة",
+    "علاج المخاوف من العلاقة الحميمة",
+    "محايدة ونسيان ألم الانفصال في حالة الافتراق والطلاق"
   ];
 
   const courseIncludes = [
@@ -74,17 +93,25 @@ const EmotionalLiberationCourse = () => {
   const courseRequirements = [
     "قدرة عالية على الاستماع الفعّال والتواصل العاطفي",
     "تحلّي بالصبر والتفهم دون إصدار أحكام",
-    "مهارة في طرح الأسئلة العميقة للوصول إلى جذور المشكلات",
+    "مهارة في طرح الأسئلة العميقة للوصول إلى جذور المشكلات وليس لإشباع فضولك",
     "مرونة في التعامل مع الحالات المختلفة",
-    "الوعي الذاتي وإدارة المشاعر الشخصية بذكاء"
+    "الوعي الذاتي وإدارة المشاعر الشخصية بذكاء",
+    "القدرة على التعاطف الحقيقي مع الآخرين دون تأثر مفرط",
+    "مهارات حل المشكلات العاطفية بطريقة إيجابية",
+    "احترام خصوصية العملاء والحفاظ على السرية التامة"
   ];
 
   const joinReasons = [
-    "ستدرب تدريبا غير تقليدي ومميز جدا يجمع بين الخبرات العملية والنظرية",
+    "ستدرب تدريبا غير تقليدي ومميز جدا يجمع بين الخبرات العملية والنظرية وستخرج من التدريب وانت ممارس محترف للتقنيات والادوات في جلساتك",
     "ستفهم شخصيتك بشكل أفضل وبالتالي ستدير مشاعرك بشكل أفضل",
-    "ستتمكن من التخلص من آلامك أولا قبل البدء بمعالجة الآخرين",
-    "ستأخذ شهادة معتمدة كممارس معتمد للعلاج الشعوري",
-    "ستكون في بيئة تدريب ممتعة ومحفزة"
+    "ستتمكن من التخلص من آلامك أولا (ستفرغ كأسك) قبل البدء بمعالجة الآخرين",
+    "ستأخذ شهادة معتمدة باعتبارك ممارس معتمد من: spiritual-technology للعلاج الشعوري",
+    "ستكون معنا في بيئة تدريب ممتعة ومحفزة",
+    "التطبيق العملي في كل محاضرة لضمان اكتساب المهارة في التدريب والتطبيق على العميلات",
+    "الباب سيكون دائما مفتوح لتحضر معنا التدريب مرة ثانية بتكلفة مجانية",
+    "بمجرد اشتراكك في البرنامج ستدخل مجتمع 'التدريب الإبداعي لدينا'",
+    "وفي مجتمعنا سنتبادل الخبرات وسنلتقي من اجل التطور المستمر وأيضا لتبادل الخبرات في التعامل مع الحالات",
+    "أيضا ستكتسب خبرة لا بأس بها بعد بدء الدورة بقليل من خلال التطبيقات"
   ];
 
   return (
@@ -104,7 +131,7 @@ const EmotionalLiberationCourse = () => {
             variants={fadeIn("up", 0.3)}
             className="text-3xl md:text-4xl font-bold text-primary font-cairo relative inline-block"
           >
-            التحرر العاطفي العميق: شفاء الطفل الداخلي
+            التحرر العاطفي العميق: شفاء الطفل الداخلي وإدارة الاضطرابات بفعالية
             <span className="block h-1 w-24 bg-secondary mt-2 mx-auto"></span>
           </motion.h2>
           <motion.p
@@ -131,7 +158,7 @@ const EmotionalLiberationCourse = () => {
             </div>
             <h3 className="text-xl font-bold mb-2">لفتاحي رجاء</h3>
             <p className="text-gray-600 mb-3">مدربة معتمدة في تقنيات PEAT</p>
-            <p>خبرة لأكثر من أربع سنوات كممارسة لتقنيات PEAT</p>
+            <p>خبرة لأكثر من أربع سنوات كممارسة لتقنيات PEAT وساعدت العديد من الناس من المغرب ومختلف الدول العربية على تحرير مشاعرهم من صدمات نفسية عانوا منها لسنوات في جلسة أو جلستين</p>
           </motion.div>
 
           <motion.div
@@ -143,7 +170,7 @@ const EmotionalLiberationCourse = () => {
             </div>
             <h3 className="text-xl font-bold mb-2">الناصري منى</h3>
             <p className="text-gray-600 mb-3">مدربة معتمدة في تقنيات PEAT</p>
-            <p>خبرة في مساعدة العديد من الناس من المغرب ومختلف الدول العربية</p>
+            <p>خبرة في مساعدة العديد من الناس من المغرب ومختلف الدول العربية - أسماؤنا مدرجة بجدول المدربين لهذه التقنيات على الموقع الإلكتروني www.spiritual-technology.com</p>
           </motion.div>
         </motion.div>
 
@@ -215,7 +242,29 @@ const EmotionalLiberationCourse = () => {
           </div>
         </motion.div>
 
-        {/* What You Get + Requirements */}
+        {/* Special Topics */}
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          initial="hidden"
+          animate={inView ? "show" : "hidden"}
+          className="bg-white p-8 rounded-lg shadow-md mb-16"
+        >
+          <h3 className="text-2xl font-bold text-primary font-cairo mb-6 text-center">مواضيع خاصة في العلاج الشعوري</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {specialTopics.map((topic, index) => (
+              <motion.div
+                key={index}
+                variants={fadeIn("up", 0.3 + index * 0.05)}
+                className="flex items-start"
+              >
+                <i className="fas fa-star text-accent mt-1 ml-2"></i>
+                <p>{topic}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Acceptance Requirements and Course Package */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <motion.div
             variants={fadeIn("right", 0.4)}
@@ -223,11 +272,11 @@ const EmotionalLiberationCourse = () => {
             animate={inView ? "show" : "hidden"}
             className="bg-white p-6 rounded-lg shadow-md"
           >
-            <h3 className="text-xl font-bold text-primary font-cairo mb-4">كل متدرب سوف يحصل على</h3>
+            <h3 className="text-xl font-bold text-primary font-cairo mb-4">شروط القبول ومتطلبات الاشتراك</h3>
             <ul className="space-y-3">
-              {courseIncludes.map((item, index) => (
+              {courseRequirements.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <i className="fas fa-gift text-accent mt-1 ml-2"></i>
+                  <i className="fas fa-check-circle text-secondary mt-1 ml-2"></i>
                   <span>{item}</span>
                 </li>
               ))}
@@ -240,11 +289,11 @@ const EmotionalLiberationCourse = () => {
             animate={inView ? "show" : "hidden"}
             className="bg-white p-6 rounded-lg shadow-md"
           >
-            <h3 className="text-xl font-bold text-primary font-cairo mb-4">متطلبات الاشتراك في التدريب</h3>
+            <h3 className="text-xl font-bold text-primary font-cairo mb-4">كل متدرب سوف يحصل على</h3>
             <ul className="space-y-3">
-              {courseRequirements.map((item, index) => (
+              {courseIncludes.map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <i className="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                  <i className="fas fa-gift text-accent mt-1 ml-2"></i>
                   <span>{item}</span>
                 </li>
               ))}
@@ -286,7 +335,7 @@ const EmotionalLiberationCourse = () => {
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate={inView ? "show" : "hidden"}
-          className="mt-16 text-center"
+          className="mt-16 text-center bg-white p-8 rounded-lg shadow-md"
         >
           <h3 className="text-2xl font-bold text-primary font-cairo mb-4">للإستفسار والحجز</h3>
           <p className="mb-2">يبدأ التدريب يوم 21 ماي 2025</p>
