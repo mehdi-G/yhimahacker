@@ -73,7 +73,7 @@ export const float = {
     transition: {
       duration: 6,
       repeat: Infinity,
-      repeatType: "loop",
+      repeatType: "loop" as const,
       ease: "easeInOut",
     },
   },

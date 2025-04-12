@@ -38,11 +38,11 @@ const About = () => {
             className="bg-primary bg-opacity-5 p-6 rounded-lg relative"
           >
             <div className="absolute -top-4 -right-4 bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center">
-              <i className="fas fa-building text-2xl"></i>
+              <i className="fas fa-home text-2xl"></i>
             </div>
             <h3 className="text-2xl font-bold text-primary font-cairo mb-4 pr-12">رؤيتنا</h3>
             <p className="text-dark leading-relaxed">
-              نسعى لنكون شركة رائدة في مجال التجارة، تقدم خدمات تلبي احتياجات عملائنا بكفاءة وجودة عالية، والمساهمة في تنمية الاقتصاد الوطني.
+              مجتمعنا لن يتقدم وقد باث معدل الأمراض النفسية في تزايد مستمر، مما أثر سلبا على إستقرار الأسر الشيء الذي يفسر بوضوح نسبة الطلاق المرتفعة والعزوف عن الزواج.
             </p>
           </motion.div>
 
@@ -51,11 +51,11 @@ const About = () => {
             className="bg-primary bg-opacity-5 p-6 rounded-lg relative"
           >
             <div className="absolute -top-4 -right-4 bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center">
-              <i className="fas fa-star text-2xl"></i>
+              <i className="fas fa-heart text-2xl"></i>
             </div>
-            <h3 className="text-2xl font-bold text-primary font-cairo mb-4 pr-12">رسالتنا</h3>
+            <h3 className="text-2xl font-bold text-primary font-cairo mb-4 pr-12">مهمتنا</h3>
             <p className="text-dark leading-relaxed">
-              توفير خدمات تجارية متكاملة ذات جودة عالية، والعمل على تحقيق رضا العملاء من خلال فريق عمل محترف وتقنيات متطورة.
+              تكوين أكبر عدد من المعالجين الشعوريين حتى يقدموا دعما ومواكبة للأسر التي تعاني في صمت أو وصلت شكواها للمحكمة الأسرية.
             </p>
           </motion.div>
         </motion.div>
@@ -91,18 +91,18 @@ const About = () => {
 const aboutFeatures = [
   {
     icon: "fas fa-user-tie",
-    title: "فريق محترف",
-    description: "نمتلك فريق عمل ذو خبرة وكفاءة عالية في مختلف المجالات",
+    title: "فريق متخصص",
+    description: "نمتلك فريق من المتخصصين ذوي خبرة في مجال العلاج النفسي والأسري",
   },
   {
-    icon: "fas fa-medal",
-    title: "جودة عالية",
-    description: "نلتزم بتقديم خدمات ذات جودة عالية تلبي احتياجات عملائنا",
+    icon: "fas fa-graduation-cap",
+    title: "دورات متميزة",
+    description: "نقدم دورات تدريبية عالية الجودة تساعد على فهم وتجاوز الصعوبات الأسرية",
   },
   {
-    icon: "fas fa-handshake",
-    title: "مصداقية وثقة",
-    description: "نعمل بشفافية ومصداقية لبناء علاقات طويلة الأمد مع عملائنا",
+    icon: "fas fa-hands-helping",
+    title: "دعم متكامل",
+    description: "نعمل على تقديم الدعم المتكامل للأسر من خلال برامج متخصصة وجلسات فردية",
   },
 ];
 

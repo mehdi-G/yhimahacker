@@ -22,10 +22,13 @@ const Hero = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary font-cairo mb-4">
               <span className="block">مرحباً بكم في</span>
-              <span className="text-accent">العائلة للتجارة</span>
+              <span className="text-accent">C.F.T.T</span>
             </h1>
+            <h2 className="text-2xl md:text-3xl text-primary font-cairo mb-4">
+              مركز لدعم الأسرة وتنميتها
+            </h2>
             <p className="text-lg md:text-xl text-dark opacity-90 mb-8">
-              نحن نقدم خدمات تجارية متكاملة بخبرة وتميز لعملائنا في المملكة العربية السعودية والشرق الأوسط.
+              نهدف إلى مساعدة الأسر على تجاوز التحديات وتحسين العلاقات الأسرية من خلال برامج تدريبية متخصصة وجلسات دعم نفسي عالية الجودة.
             </p>
             <div className="flex space-x-4 space-x-reverse">
               <motion.a
@@ -34,7 +37,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                خدماتنا
+                الدورات التدريبية
                 <i className="fas fa-arrow-left mr-2"></i>
               </motion.a>
               <motion.a
@@ -54,10 +57,13 @@ const Hero = () => {
           >
             <motion.img
               variants={slideIn("left", 0.5)}
-              src="https://images.unsplash.com/photo-1583500178472-341e02fae87b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              alt="صورة توضيحية"
+              src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="العائلة"
               className="rounded-lg shadow-2xl"
             />
+            <div className="absolute bottom-4 right-4 bg-primary bg-opacity-90 text-white p-3 rounded-lg shadow-lg">
+              <p className="font-bold">أسرتي أولويتي</p>
+            </div>
           </motion.div>
         </motion.div>
       </div>

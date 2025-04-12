@@ -23,14 +23,14 @@ const Services = () => {
             variants={fadeIn("up", 0.3)}
             className="text-3xl md:text-4xl font-bold text-white font-cairo relative inline-block"
           >
-            خدماتنا
+            الدورات التدريبية
             <span className="block h-1 w-24 bg-white mt-2 mx-auto"></span>
           </motion.h2>
           <motion.p
             variants={fadeIn("up", 0.4)}
             className="text-white text-opacity-90 mt-4 max-w-2xl mx-auto"
           >
-            نقدم مجموعة متنوعة من الخدمات التجارية المتكاملة لتلبية احتياجات عملائنا
+           دورات متخصصة في دعم الأسرة وتنمية المهارات النفسية
           </motion.p>
         </motion.div>
 
@@ -38,7 +38,7 @@ const Services = () => {
           variants={staggerContainer}
           initial="hidden"
           animate={inView ? "show" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {services.map((service, index) => (
             <motion.div
@@ -60,12 +60,28 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold text-primary font-cairo mb-3">{service.title}</h3>
                 <p className="text-dark mb-4">{service.description}</p>
+                <div className="flex justify-between items-center mt-4 border-t pt-4 border-gray-100">
+                  <div className="text-sm text-primary">
+                    <i className="fas fa-calendar-alt mr-1"></i> {service.startDate}
+                  </div>
+                  <div className="text-sm text-primary">
+                    <i className="fas fa-clock mr-1"></i> {service.duration}
+                  </div>
+                </div>
+                <div className="flex justify-between items-center mt-2">
+                  <div className="text-sm text-primary">
+                    <i className="fas fa-user-graduate mr-1"></i> {service.sessions}
+                  </div>
+                  <div className="font-bold text-accent">
+                    {service.price}
+                  </div>
+                </div>
                 <motion.a
                   href="#contact"
-                  className="text-primary font-medium hover:text-accent transition-colors inline-flex items-center"
-                  whileHover={{ x: -5 }}
+                  className="mt-4 inline-block w-full text-center bg-primary text-white py-2 px-4 rounded hover:bg-opacity-90 transition-colors"
+                  whileHover={{ y: -3 }}
                 >
-                  المزيد
+                  سجل الآن
                   <i className="fas fa-arrow-left mr-2"></i>
                 </motion.a>
               </div>

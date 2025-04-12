@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -23,8 +23,8 @@ const Navbar = () => {
   const navLinks = [
     { href: "#hero", label: "الرئيسية" },
     { href: "#about", label: "من نحن" },
-    { href: "#services", label: "خدماتنا" },
-    { href: "#projects", label: "مشاريعنا" },
+    { href: "#services", label: "الدورات" },
+    { href: "#projects", label: "البرامج" },
     { href: "#gallery", label: "معرض الصور" },
     { href: "#contact", label: "تواصل معنا", isButton: true },
   ];
@@ -39,25 +39,23 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link href="/">
-              <a className="text-2xl font-bold text-primary font-cairo flex items-center">
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className="h-12 w-12 rounded-full mr-2 border-2 border-secondary bg-primary text-white flex items-center justify-center overflow-hidden"
-                >
-                  <i className="fas fa-building"></i>
-                </motion.div>
-                <motion.span
-                  initial={{ x: -20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                >
-                  العائلة للتجارة
-                </motion.span>
-              </a>
-            </Link>
+            <div className="text-2xl font-bold text-primary font-cairo flex items-center">
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="h-12 w-12 rounded-full mr-2 border-2 border-secondary bg-primary text-white flex items-center justify-center overflow-hidden"
+              >
+                <i className="fas fa-heart"></i>
+              </motion.div>
+              <motion.span
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                C.F.T.T
+              </motion.span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

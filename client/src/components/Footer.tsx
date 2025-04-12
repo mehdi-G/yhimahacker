@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -32,18 +31,16 @@ const Footer = () => {
     quickLinks: [
       { href: "#hero", label: "الرئيسية" },
       { href: "#about", label: "من نحن" },
-      { href: "#services", label: "خدماتنا" },
-      { href: "#projects", label: "مشاريعنا" },
+      { href: "#services", label: "الدورات" },
+      { href: "#projects", label: "البرامج" },
       { href: "#gallery", label: "معرض الصور" },
       { href: "#contact", label: "تواصل معنا" },
     ],
-    services: [
-      { href: "#services", label: "الاستيراد والتصدير" },
-      { href: "#services", label: "التسويق" },
-      { href: "#services", label: "الاستشارات التجارية" },
-      { href: "#services", label: "تطوير الأعمال" },
-      { href: "#services", label: "الشحن والتخليص الجمركي" },
-      { href: "#services", label: "التمويل التجاري" },
+    courses: [
+      { href: "#services", label: "فهم الطلاق وٓاثاره" },
+      { href: "#services", label: "التحرر العاطفي العميق" },
+      { href: "#projects", label: "الجوانب القانونية والنفسية" },
+      { href: "#projects", label: "شفاء الطفل الداخلي" },
     ],
     socialLinks: [
       { icon: "fab fa-facebook-f", href: "#", label: "فيسبوك" },
@@ -61,10 +58,13 @@ const Footer = () => {
           <div>
             <div className="mb-6">
               <div className="h-16 w-16 rounded-full border-2 border-secondary bg-white text-primary flex items-center justify-center mb-4">
-                <i className="fas fa-building text-2xl"></i>
+                <i className="fas fa-heart text-2xl"></i>
               </div>
-              <h4 className="text-xl font-bold font-cairo mb-2">العائلة للتجارة</h4>
-              <p className="text-white text-opacity-80">شريكك المثالي للنجاح التجاري</p>
+              <h4 className="text-xl font-bold font-cairo mb-2">C.F.T.T</h4>
+              <p className="text-white text-opacity-80">مركز لدعم الأسرة وتنميتها</p>
+              <p className="mt-2 text-white text-opacity-80">
+                <span className="block">شعارنا: أسرتي أولويتي</span>
+              </p>
             </div>
           </div>
 
@@ -87,15 +87,15 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-xl font-bold font-cairo mb-4">خدماتنا</h4>
+            <h4 className="text-xl font-bold font-cairo mb-4">برامجنا</h4>
             <ul className="space-y-2">
-              {footerLinks.services.map((service, index) => (
+              {footerLinks.courses.map((course, index) => (
                 <li key={index}>
                   <a
-                    href={service.href}
+                    href={course.href}
                     className="text-white text-opacity-80 hover:text-secondary transition-colors"
                   >
-                    {service.label}
+                    {course.label}
                   </a>
                 </li>
               ))}
@@ -106,7 +106,7 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold font-cairo mb-4">النشرة البريدية</h4>
             <p className="text-white text-opacity-80 mb-4">
-              اشترك في نشرتنا البريدية للحصول على آخر الأخبار والعروض
+              اشترك في نشرتنا البريدية للحصول على آخر الدورات والعروض
             </p>
             <form className="flex" onSubmit={handleNewsletterSubmit}>
               <input
@@ -147,7 +147,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-white border-opacity-20 text-center">
           <p className="text-white text-opacity-80">
-            © {new Date().getFullYear()} العائلة للتجارة - جميع الحقوق محفوظة
+            © {new Date().getFullYear()} مركز C.F.T.T لدعم الأسرة وتنميتها - جميع الحقوق محفوظة
           </p>
         </div>
       </div>
