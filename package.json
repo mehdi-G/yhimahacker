@@ -73,6 +73,7 @@
     "wouter": "^3.3.5",
     "ws": "^8.18.0",
     "zod": "^3.23.8",
+    "drizzle-kit": "^0.30.4",
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
